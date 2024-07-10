@@ -258,8 +258,8 @@ def get_message_type(msg: pyrogram.types.messages_and_media.message.Message):
         pass
 
     try:
-        msg.animation.file_id
-        return "Animation"
+        msg.zip.file_id
+        return "zip"
     except:
         pass
 
